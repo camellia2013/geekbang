@@ -7,10 +7,10 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 
-public class Demo extends ClassLoader {
+public class HelloClassLoader extends ClassLoader {
 
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
-        Class clazz = new Demo().findClass("Hello");
+        Class clazz = new HelloClassLoader().findClass("Hello");
         clazz.getDeclaredMethod("hello").invoke(clazz.newInstance());
     }
 
