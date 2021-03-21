@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.week1;
 
 
 import org.apache.commons.io.FileUtils;
